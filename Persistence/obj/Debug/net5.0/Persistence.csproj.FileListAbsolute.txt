@@ -1,0 +1,15 @@
+C:\Projekty\twitter\Persistence\bin\Debug\net5.0\Persistence.deps.json
+C:\Projekty\twitter\Persistence\bin\Debug\net5.0\Persistence.dll
+C:\Projekty\twitter\Persistence\bin\Debug\net5.0\ref\Persistence.dll
+C:\Projekty\twitter\Persistence\bin\Debug\net5.0\Persistence.pdb
+C:\Projekty\twitter\Persistence\bin\Debug\net5.0\Domain.dll
+C:\Projekty\twitter\Persistence\bin\Debug\net5.0\Domain.pdb
+C:\Projekty\twitter\Persistence\obj\Debug\net5.0\Persistence.csproj.AssemblyReference.cache
+C:\Projekty\twitter\Persistence\obj\Debug\net5.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projekty\twitter\Persistence\obj\Debug\net5.0\Persistence.AssemblyInfoInputs.cache
+C:\Projekty\twitter\Persistence\obj\Debug\net5.0\Persistence.AssemblyInfo.cs
+C:\Projekty\twitter\Persistence\obj\Debug\net5.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Projekty\twitter\Persistence\obj\Debug\net5.0\Persistence.csproj.CopyComplete
+C:\Projekty\twitter\Persistence\obj\Debug\net5.0\Persistence.dll
+C:\Projekty\twitter\Persistence\obj\Debug\net5.0\ref\Persistence.dll
+C:\Projekty\twitter\Persistence\obj\Debug\net5.0\Persistence.pdb

@@ -1,0 +1,17 @@
+C:\Projekty\twitter\Application\bin\Debug\net5.0\Application.deps.json
+C:\Projekty\twitter\Application\bin\Debug\net5.0\Application.dll
+C:\Projekty\twitter\Application\bin\Debug\net5.0\ref\Application.dll
+C:\Projekty\twitter\Application\bin\Debug\net5.0\Application.pdb
+C:\Projekty\twitter\Application\bin\Debug\net5.0\Domain.dll
+C:\Projekty\twitter\Application\bin\Debug\net5.0\Persistence.dll
+C:\Projekty\twitter\Application\bin\Debug\net5.0\Persistence.pdb
+C:\Projekty\twitter\Application\bin\Debug\net5.0\Domain.pdb
+C:\Projekty\twitter\Application\obj\Debug\net5.0\Application.csproj.AssemblyReference.cache
+C:\Projekty\twitter\Application\obj\Debug\net5.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projekty\twitter\Application\obj\Debug\net5.0\Application.AssemblyInfoInputs.cache
+C:\Projekty\twitter\Application\obj\Debug\net5.0\Application.AssemblyInfo.cs
+C:\Projekty\twitter\Application\obj\Debug\net5.0\Application.csproj.CoreCompileInputs.cache
+C:\Projekty\twitter\Application\obj\Debug\net5.0\Application.csproj.CopyComplete
+C:\Projekty\twitter\Application\obj\Debug\net5.0\Application.dll
+C:\Projekty\twitter\Application\obj\Debug\net5.0\ref\Application.dll
+C:\Projekty\twitter\Application\obj\Debug\net5.0\Application.pdb
