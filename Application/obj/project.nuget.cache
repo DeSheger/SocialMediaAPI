@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "bpRMT69zQ7e9tSa7bTSOS5Ml7Y4FLwuVG6xT64k0/n5CjhaGkZnd0KC9nGiWs23BEUlVrIawdjo7NUtTMccuBA==",
+  "dgSpecHash": "WiW5b8amnhbAvWGN8YoCReUVweq9ziTNcWfdD/QMsDWwc05puy41QKZPZxw2LMfRm6lAAyHH7K99bNZp1+VeVA==",
   "success": true,
   "projectFilePath": "C:\\Projekty\\twitter\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\piotrek\\.nuget\\packages\\mediatr\\8.1.0\\mediatr.8.1.0.nupkg.sha512",
+    "C:\\Users\\piotrek\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.1.0\\mediatr.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "C:\\Users\\piotrek\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.1\\microsoft.data.sqlite.core.5.0.1.nupkg.sha512",
     "C:\\Users\\piotrek\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",
     "C:\\Users\\piotrek\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.1\\microsoft.entityframeworkcore.5.0.1.nupkg.sha512",
