@@ -43,6 +43,12 @@ namespace API.Controllers
             return Ok();
         }
 
+        [HttpPut]
+        public async Task<ActionResult<Post>> EditPost(Post post)
+        {
+            return Ok(await _mediator.Send(new Edit.Command{post = post}));
+        }
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePost(Guid id)
         {
