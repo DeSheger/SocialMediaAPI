@@ -9,9 +9,9 @@ namespace Application.Posts
 {
     public class Create
     {
-        public class Query : IRequest<Post> { public Post post { get; set; } }
+        public class Command : IRequest<Post> { public Post post { get; set; } }
 
-        public class Handler : IRequestHandler<Query, Post>
+        public class Handler : IRequestHandler<Command, Post>
         {
             private readonly DataContext _context;
             public Handler(DataContext context)
@@ -19,7 +19,7 @@ namespace Application.Posts
                 _context = context;
             }
 
-            public async Task<Post> Handle(Query request, CancellationToken cancellationToken)
+            public async Task<Post> Handle(Command request, CancellationToken cancellationToken)
             {
                 Post result = new Post
                 {
@@ -29,7 +29,7 @@ namespace Application.Posts
                     Description = request.post.Description,
                 };
 
-                await _context.Posts.AddRangeAsync(result);
+                _context.Posts.Add(result);
                 await _context.SaveChangesAsync();
 
                 return result;

@@ -36,11 +36,17 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Post>> CreatePost(Post post)
+        public async Task<IActionResult> CreatePost(Post post)
         {
-            await _mediator.Send(new Create.Query{post = post});
+            await _mediator.Send(new Create.Command{post = post});
 
             return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeletePost(Guid id)
+        {
+            return Ok(await _mediator.Send(new Delete.Command{Id = id}));
         }
     }
 }
