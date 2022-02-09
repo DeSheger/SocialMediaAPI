@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FormGroup = styled.div`
-	color: palevioletred;
+	color: #fff;
     display: flex;
     flex-direction: column;
 
@@ -12,15 +12,15 @@ export const FormGroup = styled.div`
 
 export const Label = styled.label`
 	margin-bottom: 4px;
-	color: palevioletred;
+	color: #fff;
     display: block;
 `;
 
 
 export const Input = styled.input`
 	padding: 0.5em;
-	color: palevioletred;
-	background: papayawhip;
+	color: #000;
+	background: #fff;
 	border: none;
 	border-radius: 3px;
 	width: 100%;
@@ -29,7 +29,7 @@ export const Input = styled.input`
 
 export const Message = styled.label`
 	margin-bottom: 0.5em;
-	color: palevioletred;
+	color: #fff;
     display: block;
 `;
 
@@ -38,7 +38,9 @@ export const Button = styled.button`
     padding: 5px;
     border-radius: 4px;
     border: none;
-    color: white;
+    color: #fff;
     cursor: pointer;
     background-color: #1DA1F2;
+	align-self: end;
+	margin: 10px 0;
 `;
