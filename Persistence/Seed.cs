@@ -39,26 +39,6 @@ namespace Persistence
                 await context.Posts.AddRangeAsync(posts);
                 await context.SaveChangesAsync();
             }
-
-            
-            if(!context.Users.Any())
-            {
-                var users = new List<User>
-                {
-                    new User
-                    {
-                        Name = "Piotr",
-                        Password = "test",
-                    },
-                    new User
-                    {
-                        Name = "Rafal",
-                        Password = "test",
-                    }
-                };
-                await context.Users.AddRangeAsync(users);
-                await context.SaveChangesAsync();
-            }
         }
     }
 }
