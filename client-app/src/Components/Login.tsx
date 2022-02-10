@@ -1,26 +1,43 @@
 import React, { useState } from "react";
-import { FormGroup, Label, Input, Button } from "../Styles/forms";
 import axios from 'axios';
 
 export default function Login(props: any) {
-    const [username,setUsername] = useState("");
-    const [password,setPassword] = useState("");
+    const [loginForm, setLoginForm] = useState<boolean>(true);
+    const [username,setUsername] = useState<string>("");
+    const [password,setPassword] = useState<string>("");
 
     function loginHandler() {
         const usernameValue = username;
         const passwordValue = password;
         
     }
+
+    function formHandler(isLoginFormActive: boolean) {
+        setLoginForm(isLoginFormActive);
+    }
+
     return(
-        <FormGroup>
-            <Input id="username" value={username}
-                 onChange={(e)=>setUsername(e.target.value)}/>
-            <Label htmlFor="username">Username</Label>
-            <Input id="password" value={password}
-                 onChange={(e)=>setPassword(e.target.value)}/>
-            <Label htmlFor="password">Password</Label>
-            <Button onClick={() => loginHandler()}>Log in</Button>
-            <p>Don t have account yet? <button>Register now</button></p>
-        </FormGroup>
+        <div className="login">
+            {loginForm ? 
+                <form className="login__form">
+                    <img src="https://cdn.pixabay.com/photo/2015/03/10/17/30/twitter-667462_960_720.png" />
+                    <input className="login__input" type="text" placeholder="Username ..."/>
+                    <input className="login__input" type="password" placeholder="Password ..."/>
+                    <button className="login__submit">Log in</button>
+                    <p>Don t have account yet? <button onClick={() => 
+                        formHandler(false)}>Register Now</button></p>
+                </form>
+                :<form className="login__form">
+                    <img src="https://cdn.pixabay.com/photo/2015/03/10/17/30/twitter-667462_960_720.png" />
+                    <input className="login__input" type="text" placeholder="Username"/>
+                    <input className="login__input" type="text" placeholder="DisplayName"/>
+                    <input className="login__input" type="password" placeholder="Password"/>
+                    <input className="login__input" type="text" placeholder="Image URL"/>
+                    <button className="login__submit">Register now</button>
+                    <p>Do you already have an account? <button onClick={() => 
+                        formHandler(true)}>Log In Now</button></p>
+                </form>
+            }
+        </div>
     );
 }

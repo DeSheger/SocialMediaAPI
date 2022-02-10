@@ -4,7 +4,7 @@ import Start from './Containers/Start';
 
 function App() {
   return (
-      <Start></Start>
+      <Start />
   );
 }
 
