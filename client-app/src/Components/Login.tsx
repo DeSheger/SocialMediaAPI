@@ -3,38 +3,50 @@ import axios from 'axios';
 
 export default function Login(props: any) {
     const [loginForm, setLoginForm] = useState<boolean>(true);
-    const [username,setUsername] = useState<string>("");
-    const [password,setPassword] = useState<string>("");
+    const [username, setUsername] = useState<string>("");
+    const [password, setPassword] = useState<string>("");
 
     function loginHandler() {
         const usernameValue = username;
         const passwordValue = password;
-        
+
+        axios.post("http://localhost:5000/api/account/login",
+            {
+                email: usernameValue,
+                password: passwordValue
+            }).then((response) => {
+                console.log(response.data);
+            }, (error) => {
+                console.log(error);
+            });
+
     }
 
     function formHandler(isLoginFormActive: boolean) {
         setLoginForm(isLoginFormActive);
     }
 
-    return(
+    return (
         <div className="login">
-            {loginForm ? 
-                <form className="login__form">
+            {loginForm ?
+                <form action="*" className="login__form">
                     <img src="https://cdn.pixabay.com/photo/2015/03/10/17/30/twitter-667462_960_720.png" />
-                    <input className="login__input" type="text" placeholder="Username ..."/>
-                    <input className="login__input" type="password" placeholder="Password ..."/>
-                    <button className="login__submit">Log in</button>
-                    <p>Don t have account yet? <button onClick={() => 
+                    <input className="login__input" type="text" placeholder="Email ..." value={username}
+                        onChange={(e) => setUsername(e.target.value)} />
+                    <input className="login__input" type="password" placeholder="Password ..." value={password}
+                        onChange={(e) => setPassword(e.target.value)} />
+                    <button type="button" className="login__submit" onClick={() => loginHandler()}>Log in</button>
+                    <p>Don t have account yet? <button onClick={() =>
                         formHandler(false)}>Register Now</button></p>
                 </form>
-                :<form className="login__form">
+                : <form className="login__form">
                     <img src="https://cdn.pixabay.com/photo/2015/03/10/17/30/twitter-667462_960_720.png" />
-                    <input className="login__input" type="text" placeholder="Username"/>
-                    <input className="login__input" type="text" placeholder="DisplayName"/>
-                    <input className="login__input" type="password" placeholder="Password"/>
-                    <input className="login__input" type="text" placeholder="Image URL"/>
+                    <input className="login__input" type="text" placeholder="Username" />
+                    <input className="login__input" type="text" placeholder="DisplayName" />
+                    <input className="login__input" type="password" placeholder="Password" />
+                    <input className="login__input" type="text" placeholder="Image URL" />
                     <button className="login__submit">Register now</button>
-                    <p>Do you already have an account? <button onClick={() => 
+                    <p>Do you already have an account? <button onClick={() =>
                         formHandler(true)}>Log In Now</button></p>
                 </form>
             }
