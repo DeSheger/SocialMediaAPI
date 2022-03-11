@@ -3,16 +3,18 @@ import axios from 'axios';
 
 export default function Login(props: any) {
     const [loginForm, setLoginForm] = useState<boolean>(true);
-    const [username, setUsername] = useState<string>("");
+    const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
+    const [username, setUsername] = useState<string>("");
+    const [displayName, setDisplayName] = useState<string>("");
 
     function loginHandler() {
-        const usernameValue = username;
+        const emailValue = email;
         const passwordValue = password;
 
         axios.post("http://localhost:5000/api/account/login",
             {
-                email: usernameValue,
+                email: emailValue,
                 password: passwordValue
             }).then((response) => {
                 console.log(response.data);
@@ -31,8 +33,8 @@ export default function Login(props: any) {
             {loginForm ?
                 <form action="*" className="login__form">
                     <img src="https://cdn.pixabay.com/photo/2015/03/10/17/30/twitter-667462_960_720.png" />
-                    <input className="login__input" type="text" placeholder="Email ..." value={username}
-                        onChange={(e) => setUsername(e.target.value)} />
+                    <input className="login__input" type="text" placeholder="Email ..." value={email}
+                        onChange={(e) => setEmail(e.target.value)} />
                     <input className="login__input" type="password" placeholder="Password ..." value={password}
                         onChange={(e) => setPassword(e.target.value)} />
                     <button type="button" className="login__submit" onClick={() => loginHandler()}>Log in</button>
@@ -41,10 +43,14 @@ export default function Login(props: any) {
                 </form>
                 : <form className="login__form">
                     <img src="https://cdn.pixabay.com/photo/2015/03/10/17/30/twitter-667462_960_720.png" />
-                    <input className="login__input" type="text" placeholder="Username" />
-                    <input className="login__input" type="text" placeholder="DisplayName" />
-                    <input className="login__input" type="password" placeholder="Password" />
-                    <input className="login__input" type="text" placeholder="Image URL" />
+                    <input className="login__input" type="text" placeholder="Email ..." value={email}
+                        onChange={(e) => setEmail(e.target.value)}/>
+                    <input className="login__input" type="text" placeholder="Username ..." value={username}
+                        onChange={(e)=> setUsername(e.target.value)}/>
+                    <input className="login__input" type="text" placeholder="Display Name ..." value={displayName}
+                        onChange={(e)=> setDisplayName(e.target.value)}/>
+                    <input className="login__input" type="password" placeholder="Password ..." value={password}
+                        onChange={(e)=> setPassword(e.target.value)}/>
                     <button className="login__submit">Register now</button>
                     <p>Do you already have an account? <button onClick={() =>
                         formHandler(true)}>Log In Now</button></p>
