@@ -17,7 +17,7 @@ export default function Login(props: any) {
                 email: emailValue,
                 password: passwordValue
             }).then((response) => {
-                console.log(response.data);
+                props.changeContainer("home");
             }, (error) => {
                 console.log(error);
             });

@@ -5,7 +5,7 @@ import Login from '../Components/Login';
 
 export default function Start(props: any) {
     let [mediaQuery, setMediaQuery] = useState(window.matchMedia('(min-width:800px)').matches)
-
+    
     window.addEventListener('resize', () => {
         setMediaQuery(window.matchMedia('(min-width:800px)').matches);
     });
@@ -17,7 +17,7 @@ export default function Start(props: any) {
                 
             </div>: null}
             <div className='start__rightBanner'>
-                <Login />
+                <Login changeContainer={props.changeContainer}/>
             </div>
         </div>
     );
