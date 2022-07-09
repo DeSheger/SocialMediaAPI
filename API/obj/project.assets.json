@@ -1521,34 +1521,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\piotrek\\.nuget\\packages\\": {}
+    "/home/piotr/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projekty\\twitter\\API\\API.csproj",
+      "projectUniqueName": "/home/piotr/Projects/TwitterClone/API/API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Projekty\\twitter\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\piotrek\\.nuget\\packages\\",
-      "outputPath": "C:\\Projekty\\twitter\\API\\obj\\",
+      "projectPath": "/home/piotr/Projects/TwitterClone/API/API.csproj",
+      "packagesPath": "/home/piotr/.nuget/packages/",
+      "outputPath": "/home/piotr/Projects/TwitterClone/API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\piotrek\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/piotr/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Projekty\\twitter\\Application\\Application.csproj": {
-              "projectPath": "C:\\Projekty\\twitter\\Application\\Application.csproj"
+            "/home/piotr/Projects/TwitterClone/Application/Application.csproj": {
+              "projectPath": "/home/piotr/Projects/TwitterClone/Application/Application.csproj"
             }
           }
         }
@@ -1588,6 +1586,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1596,7 +1600,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
       }
     }
   }

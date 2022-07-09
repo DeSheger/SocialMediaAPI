@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projekty\\twitter\\Domain\\Domain.csproj": {}
+    "/home/piotr/Projects/TwitterClone/Domain/Domain.csproj": {}
   },
   "projects": {
-    "C:\\Projekty\\twitter\\Domain\\Domain.csproj": {
+    "/home/piotr/Projects/TwitterClone/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projekty\\twitter\\Domain\\Domain.csproj",
+        "projectUniqueName": "/home/piotr/Projects/TwitterClone/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Projekty\\twitter\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\piotrek\\.nuget\\packages\\",
-        "outputPath": "C:\\Projekty\\twitter\\Domain\\obj\\",
+        "projectPath": "/home/piotr/Projects/TwitterClone/Domain/Domain.csproj",
+        "packagesPath": "/home/piotr/.nuget/packages/",
+        "outputPath": "/home/piotr/Projects/TwitterClone/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\piotrek\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/piotr/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,12 +53,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
         }
       }
     }

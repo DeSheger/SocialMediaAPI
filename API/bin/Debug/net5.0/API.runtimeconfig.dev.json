@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\piotrek\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\piotrek\\.nuget\\packages"
+      "/home/piotr/.dotnet/store/|arch|/|tfm|",
+      "/home/piotr/.nuget/packages"
     ]
   }
 }
