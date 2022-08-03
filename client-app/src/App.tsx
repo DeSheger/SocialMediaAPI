@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Start from './Containers/Start';
 import Home from './Containers/Home';
 
@@ -9,7 +9,16 @@ function App() {
   const changeContainer = (name:string) => {
     for(let key in container)
     {
-      console.log(key)
+      
+      if(name == key)
+      {
+        container[key as keyof typeof container] = true;
+      }
+      else
+      {
+        container[key as keyof typeof container] = false;
+      }
+      console.log(key, container[key as keyof typeof container])
     }
   }
 
