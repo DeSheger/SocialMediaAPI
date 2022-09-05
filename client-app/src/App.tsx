@@ -3,31 +3,34 @@ import Start from './Containers/Start';
 import Home from './Containers/Home';
 
 
-function App() {
-  const [container, setContainer] = useState({start: true, home:false});
+class App extends React.Component {
+  state = {
+    start: true,
+    home: false,
+  }
 
-  const changeContainer = (name:string) => {
-    for(let key in container)
-    {
-      
-      if(name == key)
-      {
-        container[key as keyof typeof container] = true;
+  changeContainer = (containerName: string) => {
+    for (let item in this.state) {
+      if (item === containerName) {
+        this.setState({
+          [item]: true
+        })
+      } else {
+        this.setState({
+          [item]: false
+        })
       }
-      else
-      {
-        container[key as keyof typeof container] = false;
-      }
-      console.log(key, container[key as keyof typeof container])
     }
   }
 
-  return (
-    <>
-      {container.start ? <Start changeContainer={changeContainer}/> : null}
-      {container.home ? <Home changeContainer={changeContainer}/> : null}
-    </>
-  );
+  render() {
+    return (
+      <>
+        {this.state.start ? <Start changeContainer={this.changeContainer} /> : null}
+        {this.state.home ? <Home changeContainer={this.changeContainer} /> : null}
+      </>
+    );
+  }
 }
 
 export default App;
