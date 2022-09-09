@@ -32,6 +32,13 @@
   background-color: #00c4ff;
 }
 
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
 .login {
   display: flex;
   flex-direction: column;
@@ -140,4 +147,27 @@
   flex: 1;
   height: 100%;
   cursor: pointer;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 15vh 0;
+}
+@media (min-width: 600px) {
+  .posts {
+    margin: 0 25vw;
+    padding: 5vh 0;
+  }
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  width: 100%;
+  border: 1px solid grey;
 }/*# sourceMappingURL=main.css.map */
