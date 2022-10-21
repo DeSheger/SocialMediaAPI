@@ -25,6 +25,8 @@ namespace Application.Posts
                 {
                     Title = request.post.Title,
                     Date = DateTime.Now,
+                    Author = request.post.Author,
+                    AuthorId = request.post.AuthorId,
                     Image = request.post.Image,
                     Description = request.post.Description,
                 };

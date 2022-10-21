@@ -1,36 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "/home/piotr/Projects/TwitterClone/Application/Application.csproj": {}
+    "C:\\Projekty\\TwitterClone\\Application\\Application.csproj": {}
   },
   "projects": {
-    "/home/piotr/Projects/TwitterClone/Application/Application.csproj": {
+    "C:\\Projekty\\TwitterClone\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/piotr/Projects/TwitterClone/Application/Application.csproj",
+        "projectUniqueName": "C:\\Projekty\\TwitterClone\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "/home/piotr/Projects/TwitterClone/Application/Application.csproj",
-        "packagesPath": "/home/piotr/.nuget/packages/",
-        "outputPath": "/home/piotr/Projects/TwitterClone/Application/obj/",
+        "projectPath": "C:\\Projekty\\TwitterClone\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\piotrek\\.nuget\\packages\\",
+        "outputPath": "C:\\Projekty\\TwitterClone\\Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/home/piotr/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\piotrek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/piotr/Projects/TwitterClone/Domain/Domain.csproj": {
-                "projectPath": "/home/piotr/Projects/TwitterClone/Domain/Domain.csproj"
+              "C:\\Projekty\\TwitterClone\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projekty\\TwitterClone\\Domain\\Domain.csproj"
               },
-              "/home/piotr/Projects/TwitterClone/Persistence/Persistence.csproj": {
-                "projectPath": "/home/piotr/Projects/TwitterClone/Persistence/Persistence.csproj"
+              "C:\\Projekty\\TwitterClone\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Projekty\\TwitterClone\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -60,37 +66,37 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/piotr/Projects/TwitterClone/Domain/Domain.csproj": {
+    "C:\\Projekty\\TwitterClone\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/piotr/Projects/TwitterClone/Domain/Domain.csproj",
+        "projectUniqueName": "C:\\Projekty\\TwitterClone\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/piotr/Projects/TwitterClone/Domain/Domain.csproj",
-        "packagesPath": "/home/piotr/.nuget/packages/",
-        "outputPath": "/home/piotr/Projects/TwitterClone/Domain/obj/",
+        "projectPath": "C:\\Projekty\\TwitterClone\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\piotrek\\.nuget\\packages\\",
+        "outputPath": "C:\\Projekty\\TwitterClone\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/home/piotr/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\piotrek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -124,45 +130,45 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/piotr/Projects/TwitterClone/Persistence/Persistence.csproj": {
+    "C:\\Projekty\\TwitterClone\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/piotr/Projects/TwitterClone/Persistence/Persistence.csproj",
+        "projectUniqueName": "C:\\Projekty\\TwitterClone\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "/home/piotr/Projects/TwitterClone/Persistence/Persistence.csproj",
-        "packagesPath": "/home/piotr/.nuget/packages/",
-        "outputPath": "/home/piotr/Projects/TwitterClone/Persistence/obj/",
+        "projectPath": "C:\\Projekty\\TwitterClone\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\piotrek\\.nuget\\packages\\",
+        "outputPath": "C:\\Projekty\\TwitterClone\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/home/piotr/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\piotrek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/piotr/Projects/TwitterClone/Domain/Domain.csproj": {
-                "projectPath": "/home/piotr/Projects/TwitterClone/Domain/Domain.csproj"
+              "C:\\Projekty\\TwitterClone\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projekty\\TwitterClone\\Domain\\Domain.csproj"
               }
             }
           }
@@ -192,18 +198,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

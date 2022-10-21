@@ -84,7 +84,13 @@
     @media (min-width: 600px) {
         flex-direction: column;
         height: 100vh;
-        width: 20%;
+        width: 150px;
+    }
+
+    @media (min-width: 800px) {
+        flex-direction: column;
+        height: 100vh;
+        width: 200px;
     }
 
     &__title {
@@ -125,14 +131,17 @@
 .posts {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    max-width: 600px;
     height: auto;
     margin: 15vh 0;
 
     @media (min-width: 600px) {
-        margin: 0 25vw;
-        padding: 5vh 0;
+        padding-left: 150px;
+    }
+
+    @media (min-width: 800px) {
+        padding-left: 150px;
     }
 }
 
@@ -141,6 +150,19 @@
     flex-direction: column;
     margin: 20px 0;
     width: 100%;
+    height: auto;
+
+    @media (min-width: 400px) {
+        width: 400px;
+    }
+
+    @media (min-width: 600px) {
+        width: 400px;
+    }
+
+    @media (min-width: 800px) {
+        
+    }
 
     border: 1px solid grey;
 }
