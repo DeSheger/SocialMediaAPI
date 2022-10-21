@@ -18,6 +18,10 @@ export default function Login(props: any) {
                 password: passwordValue
             }).then((response) => {
                 props.changeContainer("home");
+
+                props.setLoggedUser(response.data.id, response.data.displayName, 
+                    response.data.token, response.data.image, response.data.username);
+
             }, (error) => {
                 console.log(error);
             });

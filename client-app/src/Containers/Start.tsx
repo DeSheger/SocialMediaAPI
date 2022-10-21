@@ -17,7 +17,7 @@ export default function Start(props: any) {
                 
             </div>: null}
             <div className='start__rightBanner'>
-                <Login changeContainer={props.changeContainer}/>
+                <Login changeContainer={props.changeContainer} setLoggedUser={props.setLoggedUser}/>
             </div>
         </div>
     );

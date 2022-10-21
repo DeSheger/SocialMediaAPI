@@ -7,6 +7,14 @@ class App extends React.Component {
   state = {
     start: true,
     home: false,
+
+    loggedUser: {
+      Id: null,
+      DisplayName: null,
+      Token: null,
+      Image: null,
+      Username: null,
+    }
   }
 
   changeContainer = (containerName: string) => {
@@ -23,10 +31,23 @@ class App extends React.Component {
     }
   }
 
+  setLoggedUser = (id:string, displayname:string, 
+    token:string, image:string, username: string) => {
+      this.setState({
+        user: {
+          Id: id,
+          DisplayName: displayname,
+          Token: token,
+          Image: image,
+          Username: username,
+        }
+      })
+  }
+
   render() {
     return (
       <>
-        {this.state.start ? <Start changeContainer={this.changeContainer} /> : null}
+        {this.state.start ? <Start changeContainer={this.changeContainer} setLoggedUser={this.setLoggedUser}/> : null}
         {this.state.home ? <Home changeContainer={this.changeContainer} /> : null}
       </>
     );
