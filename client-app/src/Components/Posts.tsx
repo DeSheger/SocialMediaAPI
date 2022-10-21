@@ -15,8 +15,8 @@ export default function Posts() {
 
     return (
         <div className="posts">
-            {listOfPosts.map((post:any, index:any) => <Post title={post.title} description={post.description}
-            date={post.data} image={post.image}/>)}
+            {listOfPosts.map((post:any, index:any) => <Post title={post.title} author={post.author} description={post.description}
+            date={post.date} image={post.image}/>)}
         </div>
     );
 }
