@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Post from "./Post";
 
-export default function Posts() {
+export default function Posts(props: any) {
     const [listOfPosts, setListOfPosts] = useState([]);
 
     useEffect(() => {
@@ -15,8 +15,9 @@ export default function Posts() {
 
     return (
         <div className="posts">
-            {listOfPosts.map((post:any, index:any) => <Post title={post.title} author={post.author} description={post.description}
-            date={post.date} image={post.image}/>)}
+            {listOfPosts.map((post:any, index:any) => <Post id={post.id} title={post.title} 
+            author={post.author} authorId={post.authorId} description={post.description}
+            date={post.date} image={post.image} userId={props.loggedUser.Id}/>)}
         </div>
     );
 }

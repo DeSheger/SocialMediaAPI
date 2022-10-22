@@ -42,8 +42,22 @@ namespace API.Controllers
                     Username = user.UserName,
                 };
             }
-
             return Unauthorized();
+        }
+
+        [HttpPost("register")]
+        public async Task<ActionResult> CreateUser(RegisterDto userDto)
+        {
+            AppUser user = new AppUser 
+            {
+                DisplayName = userDto.DisplayName,
+                UserName = userDto.Username,
+                Email = userDto.Email
+            };
+
+            await _userManager.CreateAsync(user, userDto.Password);
+
+            return Ok();
         }
     }
 }

@@ -34,7 +34,7 @@ class App extends React.Component {
   setLoggedUser = (id:string, displayname:string, 
     token:string, image:string, username: string) => {
       this.setState({
-        user: {
+        loggedUser: {
           Id: id,
           DisplayName: displayname,
           Token: token,
@@ -48,7 +48,7 @@ class App extends React.Component {
     return (
       <>
         {this.state.start ? <Start changeContainer={this.changeContainer} setLoggedUser={this.setLoggedUser}/> : null}
-        {this.state.home ? <Home changeContainer={this.changeContainer} /> : null}
+        {this.state.home ? <Home changeContainer={this.changeContainer} loggedUser={this.state.loggedUser}/> : null}
       </>
     );
   }
