@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useReducer} from "react";
 import axios from "axios";
 
 export default function PostCreator(props: any)
@@ -6,6 +6,8 @@ export default function PostCreator(props: any)
     const [title, setTitle] = useState("")
     const [image, setImage] = useState("")
     const [description, setDescription] = useState("");
+
+    const [_, forceUpdate] = useReducer((x) => x + 1, 0);
     console.log(props.loggedUser)
     function buttonHandler(){
 
@@ -18,6 +20,7 @@ export default function PostCreator(props: any)
                 description: description,
             }).then((response) => {
                 console.log(response.data)
+                forceUpdate();
             }, (error) => {
                 console.log(error);
             });
@@ -37,7 +40,7 @@ export default function PostCreator(props: any)
                 <input className="postCreator__description" type="text" placeholder="Description ..."
                 value={description} onChange={(e) => setDescription(e.target.value)}></input>
 
-                <button className="postCreator__button" onClick={() => buttonHandler()}>Create New Post</button>
+                <button type="button" className="postCreator__button" onClick={() => buttonHandler()}>Create New Post</button>
             </form>
         </div>
     );
