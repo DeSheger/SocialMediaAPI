@@ -28,6 +28,25 @@ export default function Login(props: any) {
 
     }
 
+    function registerHandler() {
+        const emailValue = email;
+        const usernameValue = username;
+        const displayNameValue = displayName;
+        const passwordValue = password;
+
+        axios.post("http://localhost:5000/api/account/register",
+            {
+                email: emailValue,
+                username: usernameValue,
+                displayName: displayNameValue,
+                password: passwordValue
+            }).then((response) => {
+                console.log(response.data)
+            }, (error) => {
+                console.log(error);
+            });
+    }
+
     function formHandler(isLoginFormActive: boolean) {
         setLoginForm(isLoginFormActive);
     }
@@ -55,7 +74,7 @@ export default function Login(props: any) {
                         onChange={(e)=> setDisplayName(e.target.value)}/>
                     <input className="login__input" type="password" placeholder="Password ..." value={password}
                         onChange={(e)=> setPassword(e.target.value)}/>
-                    <button className="login__submit">Register now</button>
+                    <button className="login__submit" onClick={() => registerHandler()}>Register now</button>
                     <p>Do you already have an account? <button onClick={() =>
                         formHandler(true)}>Log In Now</button></p>
                 </form>
