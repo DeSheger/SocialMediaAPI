@@ -1,0 +1,15 @@
+C:\Projekty\TwitterClone\Persistence\bin\Debug\net7.0\Persistence.deps.json
+C:\Projekty\TwitterClone\Persistence\bin\Debug\net7.0\Persistence.dll
+C:\Projekty\TwitterClone\Persistence\bin\Debug\net7.0\Persistence.pdb
+C:\Projekty\TwitterClone\Persistence\bin\Debug\net7.0\Domain.dll
+C:\Projekty\TwitterClone\Persistence\bin\Debug\net7.0\Domain.pdb
+C:\Projekty\TwitterClone\Persistence\obj\Debug\net7.0\Persistence.csproj.AssemblyReference.cache
+C:\Projekty\TwitterClone\Persistence\obj\Debug\net7.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projekty\TwitterClone\Persistence\obj\Debug\net7.0\Persistence.AssemblyInfoInputs.cache
+C:\Projekty\TwitterClone\Persistence\obj\Debug\net7.0\Persistence.AssemblyInfo.cs
+C:\Projekty\TwitterClone\Persistence\obj\Debug\net7.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Projekty\TwitterClone\Persistence\obj\Debug\net7.0\Persistence.csproj.CopyComplete
+C:\Projekty\TwitterClone\Persistence\obj\Debug\net7.0\Persistence.dll
+C:\Projekty\TwitterClone\Persistence\obj\Debug\net7.0\refint\Persistence.dll
+C:\Projekty\TwitterClone\Persistence\obj\Debug\net7.0\Persistence.pdb
+C:\Projekty\TwitterClone\Persistence\obj\Debug\net7.0\ref\Persistence.dll

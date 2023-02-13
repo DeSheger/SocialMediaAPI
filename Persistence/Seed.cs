@@ -11,7 +11,7 @@ namespace Persistence
     {
         public static async Task SeedData(DataContext context, UserManager<AppUser> userManager)
         {
-            if(!userManager.Users.Any()) 
+            if (!userManager.Users.Any())
             {
                 var users = new List<AppUser>
                 {
@@ -23,12 +23,12 @@ namespace Persistence
                     }
                 };
 
-                foreach(var user in users)
+                foreach (var user in users)
                 {
                     await userManager.CreateAsync(user, "Pa$$w0rd");
                 }
             }
-            if(!context.Posts.Any())
+            if (!context.Posts.Any())
             {
                 var posts = new List<Post>
                 {
@@ -57,6 +57,20 @@ namespace Persistence
                 await context.Posts.AddRangeAsync(posts);
                 await context.SaveChangesAsync();
             }
+            if (!context.Notifications.Any())
+            {
+                var notifications = new List<Notification>
+                {
+                    new Notification
+                    {
+                        Date = DateTime.Now,
+                        Description = "Notification test"
+                    },
+                };
+                await context.Notifications.AddRangeAsync(notifications);
+                await context.SaveChangesAsync();
+
+            };
         }
     }
 }

@@ -11,5 +11,6 @@ namespace Persistence
         }
 
         public DbSet<Post> Posts { get; set; }
+        public DbSet<Notification> Notifications { get; set; }
     }
 }
