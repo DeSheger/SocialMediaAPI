@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
+import { useDispatch } from "react-redux";
 
 export default function Login(props: any) {
     const [loginForm, setLoginForm] = useState<boolean>(true);
@@ -7,8 +8,9 @@ export default function Login(props: any) {
     const [password, setPassword] = useState<string>("");
     const [username, setUsername] = useState<string>("");
     const [displayName, setDisplayName] = useState<string>("");
+    const dispatch = useDispatch();
 
-    function loginHandler() {
+    const loginHandler = () => {
         const emailValue = email;
         const passwordValue = password;
 
@@ -17,18 +19,26 @@ export default function Login(props: any) {
                 email: emailValue,
                 password: passwordValue
             }).then((response) => {
-                props.changeContainer("home");
 
-                props.setLoggedUser(response.data.id, response.data.displayName, 
-                    response.data.token, response.data.image, response.data.username);
+                dispatch({
+                    type: 'SET_USER', payload: {
+                        Id: response.data.id,
+                        DisplayName: response.data.displayName,
+                        Token: response.data.token,
+                        Image: response.data.image,
+                        Username: response.data.username,
+                    }
+                })
+                console.log("Authorized")
 
             }, (error) => {
+                alert("Login or password incorrect")
                 console.log(error);
             });
 
     }
 
-    function registerHandler() {
+    const registerHandler = () => {
         const emailValue = email;
         const usernameValue = username;
         const displayNameValue = displayName;
@@ -47,7 +57,7 @@ export default function Login(props: any) {
             });
     }
 
-    function formHandler(isLoginFormActive: boolean) {
+    const formHandler = (isLoginFormActive: boolean) => {
         setLoginForm(isLoginFormActive);
     }
 
@@ -67,13 +77,13 @@ export default function Login(props: any) {
                 : <form className="login__form">
                     <img src="https://cdn.pixabay.com/photo/2015/03/10/17/30/twitter-667462_960_720.png" />
                     <input className="login__input" type="text" placeholder="Email ..." value={email}
-                        onChange={(e) => setEmail(e.target.value)}/>
+                        onChange={(e) => setEmail(e.target.value)} />
                     <input className="login__input" type="text" placeholder="Username ..." value={username}
-                        onChange={(e)=> setUsername(e.target.value)}/>
+                        onChange={(e) => setUsername(e.target.value)} />
                     <input className="login__input" type="text" placeholder="Display Name ..." value={displayName}
-                        onChange={(e)=> setDisplayName(e.target.value)}/>
+                        onChange={(e) => setDisplayName(e.target.value)} />
                     <input className="login__input" type="password" placeholder="Password ..." value={password}
-                        onChange={(e)=> setPassword(e.target.value)}/>
+                        onChange={(e) => setPassword(e.target.value)} />
                     <button className="login__submit" onClick={() => registerHandler()}>Register now</button>
                     <p>Do you already have an account? <button onClick={() =>
                         formHandler(true)}>Log In Now</button></p>

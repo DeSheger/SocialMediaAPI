@@ -768,25 +768,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\piotrek\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\pgste\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projekty\\TwitterClone\\Domain\\Domain.csproj",
+      "projectUniqueName": "D:\\Projects\\TwitterClone\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Projekty\\TwitterClone\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\piotrek\\.nuget\\packages\\",
-      "outputPath": "C:\\Projekty\\TwitterClone\\Domain\\obj\\",
+      "projectPath": "D:\\Projects\\TwitterClone\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\pgste\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\TwitterClone\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\piotrek\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\pgste\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -832,7 +832,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

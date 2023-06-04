@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Login from '../Components/Login';
+import Login from '../components/Login';
+import { Navigate } from 'react-router-dom';
 
 
 
@@ -9,7 +10,11 @@ export default function Start(props: any) {
     window.addEventListener('resize', () => {
         setMediaQuery(window.matchMedia('(min-width:800px)').matches);
     });
-
+    console.log(props.loggedUser)
+    if(props.loggedUser.Id!=null)
+    {
+        return <Navigate to="/home"/>
+    }
     return (
         <div className='start'>
             {mediaQuery ? 
@@ -17,7 +22,7 @@ export default function Start(props: any) {
                 
             </div>: null}
             <div className='start__rightBanner'>
-                <Login changeContainer={props.changeContainer} setLoggedUser={props.setLoggedUser}/>
+                <Login />
             </div>
         </div>
     );

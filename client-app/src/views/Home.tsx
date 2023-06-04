@@ -1,10 +1,11 @@
 import axios from "axios";
 import React, {useEffect, useState} from "react";
-import Menu from "../Components/Menu";
-import PostCreator from "../Components/PostCreator";
-import Posts from "../Components/Posts";
+import Menu from "../components/Menu";
+import PostCreator from "../components/PostCreator";
+import Posts from "../components/Posts";
+import { Navigate } from "react-router-dom";
 
-export default function Home(props: any) {
+function Home(props: any) {
     const [listOfPosts, setListOfPosts] = useState([]);
 
     function getPosts()
@@ -20,6 +21,9 @@ export default function Home(props: any) {
 
     useEffect(() => getPosts())
 
+    if (props.loggedUser.Id == null) {
+        return <Navigate to="/" replace />;
+    }
     return (
         <div className="home">
             <Menu />
@@ -28,3 +32,5 @@ export default function Home(props: any) {
         </div>
     )
 }
+
+export default Home;
