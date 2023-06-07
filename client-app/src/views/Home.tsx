@@ -25,7 +25,7 @@ function Home(props: any) {
         return <Navigate to="/" replace />;
     }
     return (
-        <div className="home">
+        <div className="layout">
             <Menu />
             <PostCreator loggedUser={props.loggedUser}/>
             <Posts listOfPosts={listOfPosts} loggedUser={props.loggedUser}/>

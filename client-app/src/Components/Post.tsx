@@ -26,7 +26,7 @@ export default function Post(props:any) {
         <div className="post">
             <h2 className="post__title">{title}</h2>
             <h4 className="post__author">{author}</h4>
-            <p className="post__date">{date}</p>
+            <p className="post__date">{date.slice(0,10)}</p>
             <img className="post__image" src={image} alt="Loading failure"></img>
             <p className="post__description">{description}</p>
             <button className="post_button" disabled={authorId==props.userId ? false:true} 

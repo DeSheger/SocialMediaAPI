@@ -5,6 +5,15 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
+.layout {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .start {
   display: flex;
   flex-direction: row;
@@ -32,11 +41,60 @@
   background-color: #00c4ff;
 }
 
-.home {
+.menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
   width: 100%;
-  height: auto;
+  height: 10vh;
+  background-color: black;
+  color: #F5F8FA;
+  position: fixed;
+}
+@media (min-width: 600px) {
+  .menu {
+    flex-direction: column;
+    height: 100vh;
+    width: 150px;
+  }
+}
+@media (min-width: 800px) {
+  .menu {
+    height: 100vh;
+    width: 200px;
+  }
+}
+.menu__title {
+  display: none;
+  justify-content: center;
+  align-self: center;
+}
+@media (min-width: 600px) {
+  .menu__title {
+    display: block;
+  }
+}
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  flex: 1;
+  list-style: none;
+}
+@media (min-width: 600px) {
+  .menu__list {
+    flex-direction: column;
+  }
+}
+.menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  cursor: pointer;
 }
 
 .login {
@@ -97,63 +155,6 @@
   .login {
     width: 300px;
   }
-}
-
-.menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  height: 10vh;
-  background-color: #00c4ff;
-  color: #F5F8FA;
-  position: fixed;
-}
-@media (min-width: 600px) {
-  .menu {
-    flex-direction: column;
-    height: 100vh;
-    width: 150px;
-  }
-}
-@media (min-width: 800px) {
-  .menu {
-    flex-direction: column;
-    height: 100vh;
-    width: 200px;
-  }
-}
-.menu__title {
-  display: none;
-  justify-content: center;
-  align-self: center;
-}
-@media (min-width: 600px) {
-  .menu__title {
-    display: block;
-  }
-}
-.menu__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-content: center;
-  flex: 1;
-  list-style: none;
-}
-@media (min-width: 600px) {
-  .menu__list {
-    flex-direction: column;
-  }
-}
-.menu__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  height: 100%;
-  cursor: pointer;
 }
 
 .postCreator {
@@ -244,11 +245,10 @@
 .post {
   display: flex;
   flex-direction: column;
-  margin: 20px 0;
   width: 100%;
   height: auto;
-  border: 1px solid grey;
-  border-radius: 3px;
+  color: white;
+  border-bottom: 1px solid grey;
   padding: 6px;
 }
 @media (min-width: 400px) {
