@@ -1,11 +1,21 @@
 .layout {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: auto;
 
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    overflow: hidden;
+    background-color: black;
+    padding-top: 115px;
+    min-width: 300px;
+
+    @media (min-width: 600px) {
+        padding-left: 150px;
+    }
+
+    @media (min-width: 800px) {
+        padding-left: 200px;
+    }
 }
