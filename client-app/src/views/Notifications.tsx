@@ -6,21 +6,22 @@ import Posts from "../components/Posts";
 import { Navigate } from "react-router-dom";
 import Layout from "./Layout";
 import Main from "./Main";
+import NotificationsList from "../components/NotificationsList";
 
-function Home(props: any) {
-    const [listOfPosts, setListOfPosts] = useState([]);
+function Notifications(props: any) {
+    const [listOfNotifications, setListOfNotifications] = useState([]);
 
-    function getPosts() {
+    function getNotifications() {
 
-        axios.get("http://localhost:5000/api/posts").then(response => {
+        axios.get("http://localhost:5000/api/notifications").then(response => {
             console.log(response.data)
-            setListOfPosts(response.data)
+            setListOfNotifications(response.data)
         })
 
 
     }
 
-    useEffect(() => getPosts())
+    useEffect(() => getNotifications())
 
     if (props.loggedUser.Id == null) {
         return <Navigate to="/" replace />;
@@ -29,11 +30,11 @@ function Home(props: any) {
         <Layout>
             <Menu loggedUserName={props.loggedUser.DisplayName}/>
             <Main>
-                <PostCreator loggedUser={props.loggedUser} />
-                <Posts listOfPosts={listOfPosts} loggedUser={props.loggedUser} />
+                <h2>NOTIFICATIONS</h2>
+                <NotificationsList listOfNotifications={listOfNotifications}/>
             </Main>
         </Layout>
     )
 }
 
-export default Home;
+export default Notifications;

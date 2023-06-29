@@ -1,5 +1,6 @@
 import React, {useState, useReducer} from "react";
 import axios from "axios";
+import createNotification from "../services/createNotification";
 
 export default function PostCreator(props: any)
 {
@@ -20,6 +21,7 @@ export default function PostCreator(props: any)
                 description: description,
             }).then((response) => {
                 console.log(response.data)
+                createNotification(props.loggedUser.DisplayName,props.loggedUser.Id,' create post ')
                 forceUpdate();
             }, (error) => {
                 console.log(error);

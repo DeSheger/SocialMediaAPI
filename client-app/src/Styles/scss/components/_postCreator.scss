@@ -33,7 +33,12 @@
         @media (min-width: 600px) {
             width: 400px;
         }
+
+        @media (min-width: 1050px) {
+            width: 600px;
+        }
     }
+
 
     &__title {
         width: 100%;
