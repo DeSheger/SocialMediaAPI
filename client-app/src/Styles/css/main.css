@@ -5,27 +5,6 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Works on Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: black grey;
-}
-
-/* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 6px;
-}
-
-*::-webkit-scrollbar-track {
-  background: black;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: rgb(25, 25, 25);
-  border-radius: 10px;
-  border: 1px solid rgb(58, 58, 58);
-}
-
 .layout {
   display: flex;
   width: 100%;
@@ -34,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: rgb(20, 20, 20);
   padding-top: 115px;
   min-width: 300px;
   overflow-x: scroll;
@@ -97,7 +76,7 @@
   align-content: center;
   width: 100%;
   height: 100px;
-  background-color: rgb(27, 27, 105);
+  background-color: rgb(20, 20, 20);
   color: #F5F8FA;
   position: fixed;
   top: 0;
@@ -108,6 +87,8 @@
     height: 100vh;
     width: 200px;
     left: 0;
+    padding: 10% 0;
+    min-height: 300px;
   }
 }
 @media (min-width: 800px) {
@@ -117,21 +98,22 @@
   }
 }
 .menu__title {
+  flex: 1;
   display: none;
   justify-content: center;
-  align-self: center;
+  align-items: center;
 }
 @media (min-width: 600px) {
   .menu__title {
-    display: block;
+    display: flex;
   }
 }
 .menu__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-items: space-evenly;
   align-content: center;
-  flex: 1;
+  flex: 9;
   list-style: none;
 }
 @media (min-width: 600px) {
@@ -153,7 +135,7 @@
   color: white;
 }
 .menu a:hover {
-  color: #AAB8C2;
+  color: #232323;
 }
 
 .login {
@@ -238,8 +220,9 @@
   min-height: 300px;
   height: auto;
   padding: 6px;
-  border: 1px solid grey;
-  border-radius: 3px;
+  border: 1px solid rgb(24, 24, 24);
+  border-radius: 10px;
+  background-color: #232323;
 }
 @media (min-width: 400px) {
   .postCreator__form {
@@ -295,7 +278,8 @@
   width: 100%;
   height: auto;
   color: white;
-  border-radius: 3px;
+  background-color: #232323;
+  border-radius: 10px;
   border: 1px solid rgb(27, 27, 27);
   padding: 6px;
   margin: 10px 0;
@@ -330,7 +314,7 @@
   justify-content: end;
 }
 .post__date {
-  color: #AAB8C2;
+  color: rgb(71, 71, 71);
 }
 .post__image {
   margin: 5px 0;
@@ -364,4 +348,66 @@
 }
 .post ol > li > ul {
   list-style-type: none;
+}
+
+.ProfileDetails {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ProfileDetails__header {
+  display: flex;
+  background-color: rgb(55, 55, 55);
+  height: 300px;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.ProfileDetails__header-icon {
+  display: flex;
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  bottom: -100px;
+  border-radius: 50%;
+  background-color: rgb(84, 84, 84);
+  overflow: hidden;
+}
+.ProfileDetails__header-icon img {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.ProfileDetails__section {
+  padding-top: 150px;
+}
+.ProfileDetails__section-name {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(20, 20, 20) grey;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(20, 20, 20);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(63, 63, 63);
+  border-radius: 10px;
+  border: 1px solid rgb(20, 20, 20);
 }/*# sourceMappingURL=main.css.map */

@@ -23,8 +23,9 @@
         min-height: 300px;
         height: auto;
         padding: 6px;
-        border: 1px solid grey;
-        border-radius: 3px;
+        border: 1px solid rgb(24, 24, 24);
+        border-radius: 10px;
+        background-color: $base-color-grey;
 
         @media (min-width: 400px) {
             width: 400px;

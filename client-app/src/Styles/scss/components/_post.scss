@@ -4,6 +4,7 @@
     width: 100%;
     height: auto;
     color: white;
+    background-color: $base-color-grey;
 
     @media (min-width: 400px) {
         width: 400px;
@@ -17,7 +18,7 @@
         width: 600px;
     }
 
-    border-radius: 3px;
+    border-radius: 10px;
     border: 1px solid rgb(27, 27, 27);
     padding: 6px;
     margin: 10px 0;
@@ -39,7 +40,7 @@
     }
 
     &__date {
-        color: $base-color-grey;
+        color: rgb(71, 71, 71);
     }
 
     &__image {

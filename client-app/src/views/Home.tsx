@@ -1,5 +1,4 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Menu from "../components/Menu";
 import PostCreator from "../components/PostCreator";
 import Posts from "../components/Posts";
@@ -22,7 +21,7 @@ function Home(props: any) {
             <Menu loggedUserName={props.loggedUser.DisplayName}/>
             <Main>
                 <PostCreator loggedUser={props.loggedUser} />
-                <Posts listOfPosts={listOfPosts} loggedUser={props.loggedUser} />
+                <Posts listOfPosts={listOfPosts} loggedUser={props.loggedUser} userPosts={false}/>
             </Main>
         </Layout>
     )

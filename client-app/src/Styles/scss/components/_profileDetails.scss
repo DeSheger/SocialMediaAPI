@@ -1,0 +1,46 @@
+.ProfileDetails {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+    &__header {
+        display: flex;
+        background-color: rgb(55, 55, 55);
+        height: 300px;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        &-icon {
+            display: flex;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            bottom: -100px;
+            border-radius: 50%;
+            background-color: rgb(84, 84, 84);
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    &__section {
+        padding-top: 150px;
+
+        &-name {
+            display: flex;
+            width: 100%;
+            height: auto;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
