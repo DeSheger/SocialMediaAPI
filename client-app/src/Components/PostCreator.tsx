@@ -23,6 +23,7 @@ export default function PostCreator(props: any)
                 console.log(response.data)
                 createNotification(props.loggedUser.DisplayName,props.loggedUser.Id,' create post ')
                 forceUpdate();
+                alert('Post will appear soon!')
             }, (error) => {
                 console.log(error);
             });

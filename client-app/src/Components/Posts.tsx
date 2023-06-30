@@ -6,7 +6,7 @@ export default function Posts(props: any) {
     
     return (
         <div className="posts">
-            {props.listOfPosts.map((post:any, index:any) => <Post id={post.id} title={post.title} 
+            {props.listOfPosts.map((post:any, index:any) => <Post key={post.id} id={post.id} title={post.title} 
             author={post.author} authorId={post.authorId} description={post.description}
             date={post.date} image={post.image} userId={props.loggedUser.Id}/>).reverse()}
         </div>

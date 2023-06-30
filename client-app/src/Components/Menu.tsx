@@ -5,7 +5,7 @@ export default function Menu(props:any){
 
     return(
         <div className="menu">
-            <h1 className="menu__title">Twitter</h1>
+            <h1 className="menu__title">ShareIdeas</h1>
             <ul className="menu__list">
                 <li className="menu__item"><Link to="/home">Home</Link></li>
                 <li className="menu__item" ><Link to="/notifications">Notifications</Link></li>

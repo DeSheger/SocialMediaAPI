@@ -1,12 +1,10 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Menu from "../components/Menu";
-import PostCreator from "../components/PostCreator";
-import Posts from "../components/Posts";
-import { Navigate } from "react-router-dom";
 import Layout from "./Layout";
 import Main from "./Main";
 import NotificationsList from "../components/NotificationsList";
+import Session from "../components/Session";
 
 function Notifications(props: any) {
     const [listOfNotifications, setListOfNotifications] = useState([]);
@@ -21,13 +19,11 @@ function Notifications(props: any) {
 
     }
 
-    useEffect(() => getNotifications())
+    useEffect(() => getNotifications(),[])
 
-    if (props.loggedUser.Id == null) {
-        return <Navigate to="/" replace />;
-    }
     return (
         <Layout>
+            <Session loggedUser={props.loggedUser}/>
             <Menu loggedUserName={props.loggedUser.DisplayName}/>
             <Main>
                 <h2>NOTIFICATIONS</h2>

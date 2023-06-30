@@ -3,30 +3,22 @@ import React, { useEffect, useState } from "react";
 import Menu from "../components/Menu";
 import PostCreator from "../components/PostCreator";
 import Posts from "../components/Posts";
-import { Navigate } from "react-router-dom";
 import Layout from "./Layout";
 import Main from "./Main";
+import Session from "../components/Session";
+import getPosts from "../services/getPosts";
+import { useDispatch, useSelector } from "react-redux";
 
 function Home(props: any) {
-    const [listOfPosts, setListOfPosts] = useState([]);
+    const listOfPosts = useSelector((state: any) => state.getPostsReducer)
+    const [update, setUpdate] = useState(true)
+    const dispatch = useDispatch()
 
-    function getPosts() {
+    useEffect(()=>{getPosts(dispatch, setUpdate, update)},[update])
 
-        axios.get("http://localhost:5000/api/posts").then(response => {
-            console.log(response.data)
-            setListOfPosts(response.data)
-        })
-
-
-    }
-
-    useEffect(() => getPosts())
-
-    if (props.loggedUser.Id == null) {
-        return <Navigate to="/" replace />;
-    }
     return (
         <Layout>
+            <Session loggedUser={props.loggedUser}/>
             <Menu loggedUserName={props.loggedUser.DisplayName}/>
             <Main>
                 <PostCreator loggedUser={props.loggedUser} />
