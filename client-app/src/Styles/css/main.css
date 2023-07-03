@@ -391,6 +391,148 @@
   text-align: center;
 }
 
+.userList {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userItem {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(39, 39, 39);
+  margin: 5px 0;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+@media (min-width: 400px) {
+  .userItem {
+    width: 400px;
+  }
+}
+@media (min-width: 600px) {
+  .userItem {
+    width: 400px;
+  }
+}
+@media (min-width: 1050px) {
+  .userItem {
+    width: 600px;
+  }
+}
+.userItem__button {
+  width: 100px;
+  border-radius: 3px;
+  border: 1px solid rgb(35, 35, 35);
+  cursor: pointer;
+}
+
+.messageBox {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding-top: 100px;
+  bottom: 0;
+  left: 0;
+  border: 1px solid rgb(37, 37, 37);
+}
+.messageBox__header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(37, 37, 37);
+  padding-right: 100px;
+}
+.messageBox__header-button {
+  height: 100%;
+  width: 15%;
+  cursor: pointer;
+}
+.messageBox__messages {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(37, 37, 37);
+  position: relative;
+}
+.messageBox__messages-area {
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  overflow-y: scroll;
+}
+.messageBox__form {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.messageBox__form-text {
+  height: 100%;
+  width: 85%;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.messageBox__form-button {
+  height: 100%;
+  width: 15%;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .messageBox {
+    padding-left: 200px;
+    padding-top: 0px;
+  }
+}
+@media (min-width: 800px) {
+  .messageBox {
+    padding-left: 300px;
+  }
+}
+
+.userMessage {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: auto;
+  margin: 5px 0;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(43, 32, 82);
+  align-self: flex-end;
+}
+
+.friendMessage {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: auto;
+  margin: 5px 0;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(38, 38, 38);
+  justify-content: start;
+  left: 0;
+}
+
 /* Works on Firefox */
 * {
   scrollbar-width: thin;

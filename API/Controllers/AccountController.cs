@@ -3,6 +3,7 @@ using API.DTOs;
 using Domain;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
@@ -23,15 +24,15 @@ namespace API.Controllers
         public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
         {
             var user = await _userManager.FindByEmailAsync(loginDto.Email);
-            
-            if(user == null)
+
+            if (user == null)
             {
                 return Unauthorized();
             }
 
             var result = await _signInManager.CheckPasswordSignInAsync(user, loginDto.Password, false);
 
-            if(result.Succeeded)
+            if (result.Succeeded)
             {
                 return new UserDto
                 {
@@ -48,7 +49,7 @@ namespace API.Controllers
         [HttpPost("register")]
         public async Task<ActionResult> CreateUser(RegisterDto userDto)
         {
-            AppUser user = new AppUser 
+            AppUser user = new AppUser
             {
                 DisplayName = userDto.DisplayName,
                 UserName = userDto.Username,
@@ -58,6 +59,27 @@ namespace API.Controllers
             await _userManager.CreateAsync(user, userDto.Password);
 
             return Ok();
+        }
+
+        [HttpGet("users")]
+        public async Task<ActionResult<List<UserDto>>> UsersList()
+        {
+            var usersList = new List<UserDto>();
+            foreach (var user in _userManager.Users)
+            {
+                usersList.Add(
+                    new UserDto
+                    {
+                        Id = user.Id,
+                        DisplayName = user.DisplayName,
+                        Image = null,
+                        Token = "This will be token",
+                        Username = user.UserName,
+                    }
+                );
+            }
+
+            return usersList;
         }
     }
 }

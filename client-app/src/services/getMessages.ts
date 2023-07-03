@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const getMessages = (userId: string, dispatch:Function, setMessages:Function) => {
+const getMessages = (userId: string, setMessages:Function) => {
 
     
         axios.get(`http://localhost:5000/api/messages/${userId}`).then(response => {
