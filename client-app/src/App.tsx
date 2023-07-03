@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Notifications from './views/Notifications';
 import Profile from './views/Profile';
+import Messages from './views/Messages';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/home" element={<Home  loggedUser={loggedUser}/>}></Route>
         <Route path="/notifications" element={<Notifications  loggedUser={loggedUser}/>}></Route>
         <Route path="/profile" element={<Profile  loggedUser={loggedUser}/>}></Route>
+        <Route path="/messages" element={<Messages  loggedUser={loggedUser}/>}></Route>
       </Routes>
     </>
   );

@@ -14,10 +14,11 @@ namespace API.Controllers
 
         }
 
-        [HttpGet]
-        public async Task<ActionResult<List<Message>>> GetNotifications(Message message)
+        [HttpGet("{userId}")]
+        public async Task<ActionResult<List<Message>>> GetMessages(String userId)
         {
-            var result = _mediator.Send(new List.Query{message = message});
+            var payload = new Message{AuthorId=userId};
+            var result = _mediator.Send(new List.Query{message = payload});
 
             return await result;
         }

@@ -15,8 +15,6 @@ function Notifications(props: any) {
             console.log(response.data)
             setListOfNotifications(response.data)
         })
-
-
     }
 
     useEffect(() => getNotifications(),[])

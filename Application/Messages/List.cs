@@ -32,8 +32,6 @@ namespace Application.Messages
                         finalMesseges.Add(m);
                     }
                 }
-
-
                 return finalMesseges;
             }
         }
