@@ -10,14 +10,16 @@ const Message = (props: any) => {
     return (
 
             message.authorId == loggedUser.Id ?
+                <>
                 <div className="userMessage">
-                    <p>{props.message.authorDisplayName} :</p>
-                    <p>{props.message.userMessage}</p>
+                    <div>{props.message.userMessage}</div>
+                    <p>{message.date.slice(0,10)} {props.message.authorDisplayName}</p>
                 </div>
+                </>
                 :
                 <div className="friendMessage">
-                    <p>{props.message.authorDisplayName} :</p>
-                    <p>{props.message.userMessage}</p>
+                    <div>{props.message.userMessage}</div>
+                    <p>{message.date.slice(0,10)} {props.message.authorDisplayName}</p>
                 </div>
     )
 }

@@ -1,34 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\TwitterClone\\API\\API.csproj": {}
+    "/home/piotr/Projects/SocialMediaAPI/API/API.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\TwitterClone\\API\\API.csproj": {
+    "/home/piotr/Projects/SocialMediaAPI/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\TwitterClone\\API\\API.csproj",
+        "projectUniqueName": "/home/piotr/Projects/SocialMediaAPI/API/API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Projects\\TwitterClone\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\pgste\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\TwitterClone\\API\\obj\\",
+        "projectPath": "/home/piotr/Projects/SocialMediaAPI/API/API.csproj",
+        "packagesPath": "/home/piotr/.nuget/packages/",
+        "outputPath": "/home/piotr/Projects/SocialMediaAPI/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pgste\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/piotr/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\sdk\\7.0.305\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Projects\\TwitterClone\\Application\\Application.csproj": {
-                "projectPath": "D:\\Projects\\TwitterClone\\Application\\Application.csproj"
+              "/home/piotr/Projects/SocialMediaAPI/Application/Application.csproj": {
+                "projectPath": "/home/piotr/Projects/SocialMediaAPI/Application/Application.csproj"
               }
             }
           }
@@ -69,6 +68,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.7, 7.0.7]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -77,21 +82,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.107/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\TwitterClone\\Application\\Application.csproj": {
+    "/home/piotr/Projects/SocialMediaAPI/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\TwitterClone\\Application\\Application.csproj",
+        "projectUniqueName": "/home/piotr/Projects/SocialMediaAPI/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\Projects\\TwitterClone\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\pgste\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\TwitterClone\\Application\\obj\\",
+        "projectPath": "/home/piotr/Projects/SocialMediaAPI/Application/Application.csproj",
+        "packagesPath": "/home/piotr/.nuget/packages/",
+        "outputPath": "/home/piotr/Projects/SocialMediaAPI/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pgste\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/piotr/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -103,11 +108,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Projects\\TwitterClone\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Projects\\TwitterClone\\Domain\\Domain.csproj"
+              "/home/piotr/Projects/SocialMediaAPI/Domain/Domain.csproj": {
+                "projectPath": "/home/piotr/Projects/SocialMediaAPI/Domain/Domain.csproj"
               },
-              "D:\\Projects\\TwitterClone\\Persistence\\Persistence.csproj": {
-                "projectPath": "D:\\Projects\\TwitterClone\\Persistence\\Persistence.csproj"
+              "/home/piotr/Projects/SocialMediaAPI/Persistence/Persistence.csproj": {
+                "projectPath": "/home/piotr/Projects/SocialMediaAPI/Persistence/Persistence.csproj"
               }
             }
           }
@@ -138,26 +143,32 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.7, 7.0.7]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.107/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\TwitterClone\\Domain\\Domain.csproj": {
+    "/home/piotr/Projects/SocialMediaAPI/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\TwitterClone\\Domain\\Domain.csproj",
+        "projectUniqueName": "/home/piotr/Projects/SocialMediaAPI/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Projects\\TwitterClone\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\pgste\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\TwitterClone\\Domain\\obj\\",
+        "projectPath": "/home/piotr/Projects/SocialMediaAPI/Domain/Domain.csproj",
+        "packagesPath": "/home/piotr/.nuget/packages/",
+        "outputPath": "/home/piotr/Projects/SocialMediaAPI/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pgste\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/piotr/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -197,26 +208,32 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.7, 7.0.7]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.107/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\TwitterClone\\Persistence\\Persistence.csproj": {
+    "/home/piotr/Projects/SocialMediaAPI/Persistence/Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\TwitterClone\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "/home/piotr/Projects/SocialMediaAPI/Persistence/Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "D:\\Projects\\TwitterClone\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\pgste\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\TwitterClone\\Persistence\\obj\\",
+        "projectPath": "/home/piotr/Projects/SocialMediaAPI/Persistence/Persistence.csproj",
+        "packagesPath": "/home/piotr/.nuget/packages/",
+        "outputPath": "/home/piotr/Projects/SocialMediaAPI/Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pgste\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/piotr/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -228,8 +245,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Projects\\TwitterClone\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Projects\\TwitterClone\\Domain\\Domain.csproj"
+              "/home/piotr/Projects/SocialMediaAPI/Domain/Domain.csproj": {
+                "projectPath": "/home/piotr/Projects/SocialMediaAPI/Domain/Domain.csproj"
               }
             }
           }
@@ -260,12 +277,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.7, 7.0.7]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.107/RuntimeIdentifierGraph.json"
         }
       }
     }

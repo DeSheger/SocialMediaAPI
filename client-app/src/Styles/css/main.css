@@ -80,6 +80,7 @@
   color: #F5F8FA;
   position: fixed;
   top: 0;
+  z-index: 5;
 }
 @media (min-width: 600px) {
   .menu {
@@ -449,7 +450,7 @@
 .messageBox__header {
   display: flex;
   width: 100%;
-  height: 100px;
+  height: 50px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -466,7 +467,6 @@
   width: 100%;
   height: 100%;
   flex-direction: column;
-  border-bottom: 1px solid rgb(37, 37, 37);
   position: relative;
 }
 .messageBox__messages-area {
@@ -481,7 +481,7 @@
 .messageBox__form {
   display: flex;
   width: 100%;
-  height: 100px;
+  height: 50px;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -490,11 +490,19 @@
   width: 85%;
   cursor: pointer;
   padding: 0 10px;
+  border: 1px solid rgb(37, 37, 37);
+  border-radius: 40px;
+  background-color: rgb(20, 20, 20);
 }
 .messageBox__form-button {
   height: 100%;
   width: 15%;
+  background-color: rgb(20, 20, 20);
+  border: 1px solid rgb(37, 37, 37);
+  border-radius: 40px;
   cursor: pointer;
+  color: white;
+  margin: 0 5px;
 }
 @media (min-width: 600px) {
   .messageBox {
@@ -510,27 +518,44 @@
 
 .userMessage {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: fit-content;
   height: auto;
   margin: 5px 0;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: rgb(43, 32, 82);
   align-self: flex-end;
+}
+.userMessage div {
+  background-color: rgb(43, 32, 82);
+  border-radius: 40px;
+  padding: 10px;
+}
+.userMessage p {
+  display: flex;
+  align-self: flex-end;
+  padding: 0 10px;
+  color: rgb(83, 83, 83);
+  font-size: small;
 }
 
 .friendMessage {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: fit-content;
   height: auto;
   margin: 5px 0;
-  border-radius: 10px;
+  align-self: flex-start;
+}
+.friendMessage div {
+  background-color: rgb(43, 43, 43);
+  border-radius: 40px;
   padding: 10px;
-  background-color: rgb(38, 38, 38);
-  justify-content: start;
-  left: 0;
+}
+.friendMessage p {
+  display: flex;
+  align-self: flex-start;
+  padding: 0 10px;
+  color: rgb(83, 83, 83);
+  font-size: small;
 }
 
 /* Works on Firefox */
