@@ -1,4 +1,5 @@
 # SocialMediaAPI
+Made by Piotr Grosz
 ***********************************
 TwitterClone with ASP.NET and REACT
 ***********************************
