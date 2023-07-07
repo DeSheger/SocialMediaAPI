@@ -24,8 +24,13 @@
         padding-right: 100px;
         &-button {
             height: 100%;
-            width: 15%;
+            width: 100px;
+            background-color: rgb(20, 20, 20);
+            border: 1px solid rgb(37, 37, 37);
+            border-radius: 40px;
             cursor: pointer;
+            color: rgb(255, 0, 0);;
+            margin: 0 5px;
         }
     }
 
@@ -36,15 +41,14 @@
 
         flex-direction: column;
         position: relative;
+        overflow-y: scroll;
         &-area {
             display: flex;
             flex-direction: column;
-            bottom: 0;
             height: 100%;
             width: 100%;
             position: absolute;
             overflow-y: scroll;
-
         }
     }
 
@@ -64,11 +68,12 @@
             border: 1px solid rgb(37, 37, 37);
             border-radius: 40px;
             background-color: rgb(20, 20, 20);
+            color: white;
         }
 
         &-button {
             height: 100%;
-            width: 15%;
+            width: 100px;
             background-color: rgb(20, 20, 20);
             border: 1px solid rgb(37, 37, 37);
             border-radius: 40px;

@@ -19,7 +19,7 @@ export default function Start(props: any) {
         <div className='start'>
             {mediaQuery ? 
             <div className='start__leftBanner'>
-                
+                ShareIdeas
             </div>: null}
             <div className='start__rightBanner'>
                 <Login />

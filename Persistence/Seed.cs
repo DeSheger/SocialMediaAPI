@@ -11,66 +11,7 @@ namespace Persistence
     {
         public static async Task SeedData(DataContext context, UserManager<AppUser> userManager)
         {
-            if (!userManager.Users.Any())
-            {
-                var users = new List<AppUser>
-                {
-                    new AppUser
-                    {
-                        DisplayName = "Piotr",
-                        UserName = "piotr",
-                        Email = "piotr@test.com"
-                    }
-                };
-
-                foreach (var user in users)
-                {
-                    await userManager.CreateAsync(user, "Pa$$w0rd");
-                }
-            }
-            if (!context.Posts.Any())
-            {
-                var posts = new List<Post>
-                {
-                    new Post
-                    {
-                        Title = "Post 1",
-                        Date = DateTime.Now,
-                        Image = null,
-                        Description = "Post 1 description here",
-                    },
-                    new Post
-                    {
-                        Title = "Post 2",
-                        Date = DateTime.Now,
-                        Image = null,
-                        Description = "Post 2 description here",
-                    },
-                    new Post
-                    {
-                        Title = "Post 1",
-                        Date = DateTime.Now,
-                        Image = null,
-                        Description = "Post 2 description here",
-                    },
-                };
-                await context.Posts.AddRangeAsync(posts);
-                await context.SaveChangesAsync();
-            }
-            if (!context.Notifications.Any())
-            {
-                var notifications = new List<Notification>
-                {
-                    new Notification
-                    {
-                        Date = DateTime.Now,
-                        Description = "Notification test"
-                    },
-                };
-                await context.Notifications.AddRangeAsync(notifications);
-                await context.SaveChangesAsync();
-
-            };
+            // No seed text at this moment
         }
     }
 }

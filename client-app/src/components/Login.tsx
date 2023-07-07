@@ -18,8 +18,8 @@ function Login(props: any) {
     return (
         <div className="login">
             {loginForm ?
-                <form action="*" className="login__form">
-                    <img src="https://cdn.pixabay.com/photo/2015/03/10/17/30/twitter-667462_960_720.png" />
+                <div className="login__form">
+                    <img src="https://cdn.pixabay.com/photo/2018/02/22/11/18/envelope-3172770_1280.png" />
                     <input className="login__input" type="text" placeholder="Email ..." value={email}
                         onChange={(e) => setEmail(e.target.value)} />
                     <input className="login__input" type="password" placeholder="Password ..." value={password}
@@ -27,9 +27,9 @@ function Login(props: any) {
                     <button type="button" className="login__submit" onClick={() => loginHandler(email, password, dispatch)}>Log in</button>
                     <p>Don t have account yet? <button onClick={() =>
                         formHandler(false)}>Register Now</button></p>
-                </form>
-                : <form className="login__form">
-                    <img src="https://cdn.pixabay.com/photo/2015/03/10/17/30/twitter-667462_960_720.png" />
+                </div>
+                : <div className="login__form">
+                    <img src="https://cdn.pixabay.com/photo/2018/02/22/11/18/envelope-3172770_1280.png" />
                     <input className="login__input" type="text" placeholder="Email ..." value={email}
                         onChange={(e) => setEmail(e.target.value)} />
                     <input className="login__input" type="text" placeholder="Username ..." value={username}
@@ -42,7 +42,7 @@ function Login(props: any) {
                         registerHandler(email, username, displayName, password )}>Register now</button>
                     <p>Do you already have an account? <button onClick={() =>
                         formHandler(true)}>Log In Now</button></p>
-                </form>
+                </div>
             }
         </div>
     );

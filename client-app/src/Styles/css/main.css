@@ -55,8 +55,9 @@
   align-items: center;
   flex: 1;
   height: 100%;
-  background-image: url("https://cdn.pixabay.com/photo/2016/11/18/11/16/social-1834013_960_720.png");
+  background-color: rgb(20, 20, 20);
   background-position: center;
+  color: white;
 }
 .start__rightBanner {
   display: flex;
@@ -66,7 +67,7 @@
   flex: 1;
   height: 100%;
   padding: 20px;
-  background-color: #00c4ff;
+  background-color: rgb(104, 104, 104);
 }
 
 .menu {
@@ -430,7 +431,10 @@
 .userItem__button {
   width: 100px;
   border-radius: 3px;
-  border: 1px solid rgb(35, 35, 35);
+  height: 100%;
+  border: none;
+  background-color: rgb(20, 20, 20);
+  color: rgb(255, 0, 0);
   cursor: pointer;
 }
 
@@ -459,8 +463,13 @@
 }
 .messageBox__header-button {
   height: 100%;
-  width: 15%;
+  width: 100px;
+  background-color: rgb(20, 20, 20);
+  border: 1px solid rgb(37, 37, 37);
+  border-radius: 40px;
   cursor: pointer;
+  color: rgb(255, 0, 0);
+  margin: 0 5px;
 }
 .messageBox__messages {
   display: flex;
@@ -468,11 +477,11 @@
   height: 100%;
   flex-direction: column;
   position: relative;
+  overflow-y: scroll;
 }
 .messageBox__messages-area {
   display: flex;
   flex-direction: column;
-  bottom: 0;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -493,10 +502,11 @@
   border: 1px solid rgb(37, 37, 37);
   border-radius: 40px;
   background-color: rgb(20, 20, 20);
+  color: white;
 }
 .messageBox__form-button {
   height: 100%;
-  width: 15%;
+  width: 100px;
   background-color: rgb(20, 20, 20);
   border: 1px solid rgb(37, 37, 37);
   border-radius: 40px;

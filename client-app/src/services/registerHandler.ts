@@ -15,7 +15,7 @@ const registerHandler = (email: String, username: String, displayName: String, p
         }).then((response) => {
             console.log(response.data)
         }, (error) => {
-            alert(error)
+            alert(`Email, Username or Displayname already exist`)
         });
 }
 

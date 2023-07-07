@@ -12,9 +12,9 @@
 
         flex: 1;
         height: 100%;
-
-        background-image: url("https://cdn.pixabay.com/photo/2016/11/18/11/16/social-1834013_960_720.png");
+        background-color: rgb(20, 20, 20);
         background-position: center;
+        color: white;
     }
 
     &__rightBanner {
@@ -27,6 +27,6 @@
         height: 100%;
         padding: 20px;
 
-        background-color: $base-color-blue;
+        background-color: rgb(104, 104, 104);
     }
 }
