@@ -10,6 +10,7 @@ const createMessage = (loggedUserId: string, userId: string
             authorDisplayName:loggedUserDisplayName,
             userMessage: userMessage
         }).then(response => {
+            console.log(response.statusText)
     })
     
 }

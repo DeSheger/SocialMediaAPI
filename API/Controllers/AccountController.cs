@@ -49,6 +49,16 @@ namespace API.Controllers
         [HttpPost("register")]
         public async Task<ActionResult> CreateUser(RegisterDto userDto)
         {
+
+            foreach (var userFromList in _userManager.Users)
+            {
+                if(userFromList.Email == userDto.Email || userFromList.DisplayName == userDto.DisplayName 
+                || userFromList.UserName == userDto.Username)
+                {
+                    return BadRequest("Same Email/Displayname/Username");
+                } 
+            }
+            
             AppUser user = new AppUser
             {
                 DisplayName = userDto.DisplayName,

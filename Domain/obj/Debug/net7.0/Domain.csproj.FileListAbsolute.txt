@@ -34,3 +34,15 @@ D:/Projects/TwitterClone/Domain/obj/Debug/net7.0/ref/Domain.dll
 /home/piotr/Projects/SocialMediaAPI/Domain/obj/Debug/net7.0/refint/Domain.dll
 /home/piotr/Projects/SocialMediaAPI/Domain/obj/Debug/net7.0/Domain.pdb
 /home/piotr/Projects/SocialMediaAPI/Domain/obj/Debug/net7.0/ref/Domain.dll
+D:\Projects\TwitterClone\Domain\bin\Debug\net7.0\Domain.deps.json
+D:\Projects\TwitterClone\Domain\bin\Debug\net7.0\Domain.dll
+D:\Projects\TwitterClone\Domain\bin\Debug\net7.0\Domain.pdb
+D:\Projects\TwitterClone\Domain\obj\Debug\net7.0\Domain.csproj.AssemblyReference.cache
+D:\Projects\TwitterClone\Domain\obj\Debug\net7.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\TwitterClone\Domain\obj\Debug\net7.0\Domain.AssemblyInfoInputs.cache
+D:\Projects\TwitterClone\Domain\obj\Debug\net7.0\Domain.AssemblyInfo.cs
+D:\Projects\TwitterClone\Domain\obj\Debug\net7.0\Domain.csproj.CoreCompileInputs.cache
+D:\Projects\TwitterClone\Domain\obj\Debug\net7.0\Domain.dll
+D:\Projects\TwitterClone\Domain\obj\Debug\net7.0\refint\Domain.dll
+D:\Projects\TwitterClone\Domain\obj\Debug\net7.0\Domain.pdb
+D:\Projects\TwitterClone\Domain\obj\Debug\net7.0\ref\Domain.dll

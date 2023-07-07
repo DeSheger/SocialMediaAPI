@@ -27,6 +27,10 @@ namespace API.Controllers
         [HttpPost]
         public async Task<IActionResult> CreatePost(Message message)
         {
+            if(message.UserMessage == string.Empty)
+            {
+                return NoContent();
+            }
             await _mediator.Send(new Create.Command{message = message});
 
             return Ok();
