@@ -35,7 +35,7 @@ How to run Project on PC?
 
 * Clone repository to your PC
 
-  > git clone https://github.com/DeSheger/SocialMediaAPI
+      git clone https://github.com/DeSheger/SocialMediaAPI
 
 * Make sure you have insalled following frameworks/libraries on your PC:
 
@@ -47,29 +47,32 @@ How to run Project on PC?
 
 * Get to cloned repository
 
-  > cd SocialMediaAPI
+      cd SocialMediaAPI
 
 * Run command
 
-  > dotnet build
+      dotnet build
 
 * Get to API folder and then run local Server Side App
 
-  > cd API
-  > dotnet run watch
+      cd API
+  
+* And then
+
+      dotnet run watch
 
 * After that server should run on localhost:5000
 * Next step is to launch CLient Side App. To do that open new terminal and get to the folder client-side
 
-  > cd SocialMediaAPI/client-side
+      cd SocialMediaAPI/client-side
 
 * Use commend to install necessry dependencies
 
-  > npm install
+      npm install
 
 * After that you must use command to start API:
 
-  > npm start
+      npm start
 
 * Your Client Side App should run on localhost:3000 automatically
  
