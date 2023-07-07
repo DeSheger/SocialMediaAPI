@@ -47,7 +47,7 @@ How to run Project on PC?
 
 * Get to cloned repository
 
-> cd SocialMediaAPI
+  cd SocialMediaAPI
 
 * Run command
 
