@@ -1,10 +1,11 @@
 import axios from "axios";
+import urlApi from "./servicesVariables";
 
-const createMessage = (loggedUserId: string, userId: string
+const createMessage = async (loggedUserId: string, userId: string
     , loggedUserDisplayName: string, userMessage: string) => {
 
     
-        axios.post(`http://localhost:5000/api/messages`,{
+        await axios.post(`${urlApi}/messages`,{
             authorId: loggedUserId,
             addresseeId: userId,
             authorDisplayName:loggedUserDisplayName,

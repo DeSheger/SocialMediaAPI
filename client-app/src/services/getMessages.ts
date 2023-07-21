@@ -1,9 +1,10 @@
 import axios from "axios";
+import urlApi from "./servicesVariables";
 
 const getMessages = (userId: string, setMessages:Function) => {
 
     
-        axios.get(`http://localhost:5000/api/messages/${userId}`).then(response => {
+        axios.get(`${urlApi}/messages/${userId}`).then(response => {
         console.log(response.data)
         setMessages(response.data)
     })

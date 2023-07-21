@@ -1,10 +1,11 @@
 import axios from "axios";
+import urlApi from "./servicesVariables";
 
 const loginHandler = (email: String, password: String, dispatch: Function) => {
     const emailValue = email;
     const passwordValue = password;
 
-    axios.post("http://localhost:5000/api/account/login",
+    axios.post(`${urlApi}/account/login`,
         {
             email: emailValue,
             password: passwordValue

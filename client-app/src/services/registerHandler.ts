@@ -1,4 +1,5 @@
 import axios from "axios";
+import urlApi from "./servicesVariables";
 
 const registerHandler = (email: String, username: String, displayName: String, password: String) => {
     const emailValue = email;
@@ -6,7 +7,7 @@ const registerHandler = (email: String, username: String, displayName: String, p
     const displayNameValue = displayName;
     const passwordValue = password;
 
-    axios.post("http://localhost:5000/api/account/register",
+    axios.post(`${urlApi}/account/register`,
         {
             email: emailValue,
             username: usernameValue,

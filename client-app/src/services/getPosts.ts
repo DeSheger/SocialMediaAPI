@@ -1,14 +1,16 @@
 import axios from "axios";
+import urlApi from "./servicesVariables";
 
-const getPosts = (dispatch: Function, setUpdate: Function, update:boolean) => {
+const getPosts = async (dispatch: Function, setUpdate: Function, update:boolean) => {
 
     if(update)
     {
-        axios.get("http://localhost:5000/api/posts").then(response => {
+        await axios.get(`${urlApi}/posts`).then(response => {
         console.log(response.data)
         dispatch({
             type: 'SET_POSTS', payload: response.data
         })
+        setUpdate(true)
     })
     }
     setUpdate(false)

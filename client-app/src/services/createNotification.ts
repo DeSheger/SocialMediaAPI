@@ -1,10 +1,11 @@
 import axios from "axios";
+import urlApi from "./servicesVariables";
 
 const createNotification = (author:any,authorId:any,description:any) => {
     const Author = author;
     const AuthorID = authorId;
     const Description = description
-    axios.post("http://localhost:5000/api/notifications",{
+    axios.post(`${urlApi}/notifications`,{
         Author,
         AuthorID,
         Description

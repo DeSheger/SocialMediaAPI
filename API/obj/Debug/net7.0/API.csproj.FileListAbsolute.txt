@@ -322,3 +322,4 @@ D:\Projects\TwitterClone\API\obj\Debug\net7.0\refint\API.dll
 D:\Projects\TwitterClone\API\obj\Debug\net7.0\API.pdb
 D:\Projects\TwitterClone\API\obj\Debug\net7.0\API.genruntimeconfig.cache
 D:\Projects\TwitterClone\API\obj\Debug\net7.0\ref\API.dll
+D:\Projects\TwitterClone\API\bin\Debug\net7.0\API.staticwebassets.runtime.json
